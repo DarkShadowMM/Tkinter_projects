@@ -6,7 +6,7 @@ def start_drawing(event):
 
 def draw(event):
     global last_x, last_y
-    canvas.create_line(last_x, last_y, event.x, event.y, width=40)
+    canvas.create_line(last_x, last_y, event.x, event.y, width=2)
     last_x, last_y = event.x, event.y
 
 def stop_drawing(event):
